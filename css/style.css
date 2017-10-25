@@ -1,0 +1,289 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  padding: 10px 10px 50px 10px;
+}
+
+header{
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+  background-color: rgb(234, 181, 59);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  border: 5px solid;
+  border-color: rgb(80, 48, 25);
+  box-shadow: 15px 19px 4px 4px rgba(0, 0, 0, 0.2), 10px 18px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dummyIcon{
+  position: absolute;
+  border: 1px solid black;
+  border: none;
+  width: 10%;
+  height: 120px;
+  background-image: url('iconKanye.png');
+  background-size: cover;
+  margin: 50px 190px
+}
+
+input{
+  font-size: 1.3em;
+  font-family: 'Kurale', serif;
+  color: rgb(80, 48, 25);
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-left: 25px;
+  width: 20%;
+}
+
+button{
+  font-size: 1.4em;
+  background-color: rgb(80, 48, 25);
+  color: white;
+  border-radius: 8px;
+  font-family: 'Kurale', serif;
+}
+
+nav{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  position: fixed;
+}
+
+nav a{
+  border: 4px solid;
+  border-color: rgb(234, 181, 59);
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+  font-family: 'Kurale', serif;
+  color:  rgb(80, 48, 25);
+  font-size: 2em;
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+nav a:hover{
+  color: white;
+  background-color: rgb(80, 48, 25);
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-family: 'Kurale', serif;
+  margin-top: 70px;
+  font-size: 4em;
+}
+
+#works{
+  border: 5px solid;
+  border-color: rgb(80, 48, 25);
+  box-shadow: 6px 8px 15px 0px rgba(0, 0, 0, 0.2), 4px 15px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40%;
+  margin: 0 auto;
+  color: rgb(80, 48, 25);
+  padding: 0 20px 0 20px;
+  margin-top: 55px;
+}
+
+#works p:first-of-type{
+  font-size: 1.7em;
+  text-align: left;
+  font-weight: 900;
+}
+
+.track{
+  width: 38%;
+  height: 450px;
+  margin: 40px auto;
+  border: 8px solid;
+  border-color: rgb(80, 48, 25);
+  border-radius: 50%;
+  box-shadow: 15px 16px 30px 4px rgba(0, 0, 0, 0.2), 10px 26px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inside ul{
+  height: 37%;
+  width: 92%;
+  margin: 55px auto;
+  overflow: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inside li{
+  list-style: none;
+  text-align:center;
+  margin-right: 34px;
+  color: rgb(80, 48, 25);
+  line height: 2.5;
+  font-family: 'Kurale', serif;
+  font-size: 2em;
+  cursor:pointer;
+}
+
+.inside li:hover{
+  border-bottom: 3px solid;
+  border-color: rgb(234, 181, 59);
+}
+
+.inside{
+  border: 1px solid black;
+  border: none;
+  margin-top: 35px;
+  height: 83%;
+}
+
+
+.inside h2{
+  font-family: 'Kurale', serif;
+  font-weight: bolder;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.words{
+  white-space: pre-line;
+  border: 3px solid;
+  border-radius: 7px;
+  width: 50%;
+  height: 500px;
+  padding: 5px;
+  margin: 100px auto;
+  overflow: scroll;
+  border-color: rgb(234, 181, 59);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wHead{
+  width: 100%;
+  height: 20%;
+  background-color: rgb(80, 48, 25);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.words h2{
+  font-size: 4em;
+  text-align: center;
+  color: rgb(234, 181, 59);
+  margin-top: -3px;
+  font-family: 'Kurale', serif;
+}
+
+p{
+  color: rgb(80, 48, 25);
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  color: rgb(80, 48, 25);
+  font-size: 1.5em;
+  font-family: 'Kurale', serif;
+  line-height: 2;
+}
+
+.kanye-head{
+  height: 105px;
+  width: 18%;
+  background-image: url("kanye-head.png");
+  background-size: 80px 95px;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: -55px
+}
+
+.dummy{
+  border: 1px solid black;
+  height: 250px;
+  width: 20%;
+  position: absolute;
+  border: 1px solid black;
+  height: 250px;
+  width: 20%;
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 115px;
+  background-image: url('westDummy.png');
+  background-size: cover;
+  border: none;
+}
+
+.dummyFirst{
+  border: 1px solid black;
+  position: absolute;
+  width: 25%;
+  height: 290px;
+  margin: 375px 100px;
+  background-image: url('westDummy2.png');
+  background-size: cover;
+  border: none;
+}

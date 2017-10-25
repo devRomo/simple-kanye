@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kanye API</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <div class="dummyIcon">
+
+        </div>
+        <h1>Kanye Album and Lyrics</h1>
+    </header>
+    <div class="Main" class="clearfix">
+      <section id="search">
+        <div class="userStuff">
+          <input id="song" type="text" placeholder="Albums">
+          <button type="button">Get Kanye Tracks</button>
+        </div>
+      </section>
+      <div class="dummyFirst">
+
+      </div>
+      <nav>
+        <a href="#search">Search</a>
+        <a href="#tList">Tracks</a>
+        <a href="#lyrics">Lyrics</a>
+      </nav>
+
+      <section id="works">
+        <div class="kanye-head">
+
+        </div>
+        <p>Start by searching your favorite Kanye album. In order to search albums with spaces type an underscore and replace the spaces.</p>
+        <p>E.g.: "the college dropout" is "the_college_dropout"</p>
+      </section>
+
+      <section id="tList">
+        <div class="track">
+          <div class="inside">
+              <h2>Track List</h2>
+              <ul>
+              </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="lyrics">
+        <div class="dummy">
+
+        </div>
+        <div class="words">
+          <div class="wHead">
+            <h2>Lyrics</h2>
+          </div>
+          <p class="lyrics"></p>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
+  </body>
+</html>
